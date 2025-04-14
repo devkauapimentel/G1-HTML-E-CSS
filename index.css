@@ -1,0 +1,142 @@
+/* Reset e fontes */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Wrapper para o sticky footer */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Área de conteúdo que cresce para empurrar o footer para baixo */
+.content {
+  flex: 1;
+}
+
+/* Menu */
+.menu {
+  padding: 25px 0;
+  background-color: #C4170C;
+}
+
+.menu ul {
+  justify-content: space-between;
+  display: flex;
+  margin: 0 20px;
+  align-items: center;
+  list-style: none;
+}
+
+.menu ul li {
+  display: flex;
+  font-size: 20px;
+}
+
+.menu ul a {
+  color: white;
+  text-decoration: none;
+}
+
+#menu-1 {
+  font-weight: bold;
+}
+
+/* Caixa de busca */
+.search-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-box input {
+  background-color: #A7130C;
+  border: none;
+  width: 150px;
+  height: 35px;
+  border-radius: 5px;
+  padding-left: 35px;
+  color: white;
+  opacity: 0.7;
+}
+
+.search-box input::placeholder {
+  color: white;
+  opacity: 0.5;
+}
+
+.search-box i {
+  position: absolute;
+  left: 10px;
+  color: white;
+  pointer-events: none;
+}
+
+/* Container */
+.container {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Área dos artigos - Grid de cards */
+.materias {
+  margin: 50px 0px 50px 0px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* Card de artigo */
+.materias section {
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Imagem do card */
+.materias img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Texto do card */
+.conteudo-do-texto {
+  padding: 15px;
+}
+
+.conteudo-do-texto h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.conteudo-do-texto p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Footer */
+.footer {
+  background-color: #A7130C;
+  color: white;
+  padding: 25px 0;
+  text-align: center;
+}
+
+#logo {
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+}
